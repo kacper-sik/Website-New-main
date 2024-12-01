@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+
+    <meta charset-="utf-8">
+    <title> Hot Beans - Homepage </title>
+    <link rel="stylesheet" href="Homepage.css">
+
+</head>
+
+
+
+<body>
+
+    <!--Header-->
+
+    <h1><u> Hot Beans <br>
+    <div class="slogan">
+    The most creative website development company!
+    <div class="topnav">
+        <a class="active" href="Homepage.html">Home</a>
+        <a href="Account.html">Account</a>
+        <a href="Apply now.html">Apply now</a>
+        <input type="text" placeholder="⌕ Search..">
+      </div></u></h1>  
+    </div>
+
+<h3 class="Slideshow_Title"> Our most recent designs! </h3>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <b><div class="numbertext">1 / 3</div></b>
+          <img src="Forest.jpg" style="width:100%">
+          <b><div class="text">Website 1</div></b>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="Desert.jpg" style="width:100%">
+          <b><div class="text">Website 2</div></b>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="Mountain.jpg" style="width:100%">
+          <b><div class="text">Website 3</div></b>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)"></a>
+        <a class="next" onclick="plusSlides(1)"></a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+
+<div class="who_are_we">
+<u><h2> Who are we?</h2></u>
+<p2 class="who_are_we_TEXT"><b>
+
+    Hot Beans is a website company that specializes in the development and making of websites.<br>
+    Our range of websites include things from charity websites, event organisers, businesses and more.<br>
+    Hot Beans was founded in [YEAR] and is currently owned by [FIRST_NAME] [LAST_NAME]. <br>
+    Hot Beans has been able to work with many famous websites today, having them help achieve the look, style and features that were wanted. <br>
+ </b></p2>
+</div>
+
+<div class="consultslogan">
+<p><b>
+    CONSULT ➜ DESIGN ➜ DEVELOP ➜ LAUNCH ➜ SUPPORT
+</b></p>
+</div>
+
+<div class="Contact_Us">
+  <p><b> Contact Us! </b></p>
+</div>
+
+<div class="Rating">
+  <p><b>★★★★⯪<br>
+  4.5 Star review from previous clients!</b></p>
+</div>
+
+<div class="Apply now">
+  <p><b>★★★★⯪<br>
+  4.5 Star review from previous clients!</b></p>
+</div>
+
+
+
+</body>
+</html>

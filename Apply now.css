@@ -1,0 +1,60 @@
+body{
+    background-color:rgb(202, 202, 202);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px;
+    color:#3b3b3b;
+
+}
+
+h1{
+    color:rgb(255, 255, 255);
+    text-align: center;
+    background-color: grey
+}
+
+p{
+    color:rgb(255, 255, 255);
+    text-align: center;
+    background-color: grey;
+    font-size: 14px
+}
+
+.slogan{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background-color: grey;
+    font-size: large;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: grey;
+  }
+
+  .topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    color: rgb(255, 255, 255);
+    transform: scale(1.25);
+    }
+
+  .topnav a.active {
+    color: white;
+  }
+
+  .topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+  }
